@@ -126,3 +126,6 @@ footer nav a { text-decoration: none; }
   .idea { grid-template-columns: 84px 1fr; gap: 14px; }
 }
 @media (prefers-reduced-motion: reduce) { .gcard svg { transition: none; } }
+
+/* Trust: say where affiliate links go */
+.idea .row::after { content: "Goes to amazon.com · opens in a new tab"; flex-basis: 100%; font-size: 12.5px; color: var(--sub); }
