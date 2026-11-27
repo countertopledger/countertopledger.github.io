@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kitchen Fit Finder: Which Appliance Fits Your Kitchen? | Countertop Ledger</title>
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Countertop Ledger">
+<meta property="og:title" content="Kitchen Fit Finder: Which Appliance Fits Your Kitchen? | Countertop Ledger">
+<meta property="og:description" content="Answer 4 questions about your household, counter space and cooking and see which kitchen appliance fits, with the scoring shown.">
+<meta property="og:url" content="https://countertopledger.github.io/fit-finder.html">
+<meta property="og:image" content="https://countertopledger.github.io/assets/og/home.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="p:domain_verify" content="b76fc6cef4128d5ef0ec59df66512564"/>
+<link rel="canonical" href="https://countertopledger.github.io/fit-finder.html">
+<meta name="description" content="Answer 4 questions about your household, counter space and cooking and see which kitchen appliance fits, with the scoring shown.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231b1b1d'/%3E%3Cpath d='M7 21l6-8 5 5 7-10' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<style>
+.ff fieldset{border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin:0 0 14px}
+.ff legend{font-weight:700;padding:0 6px}
+.ff label{display:block;padding:6px 0;cursor:pointer}
+.ff input{margin-right:8px}
+.res{border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:12px 0;background:var(--soft)}
+.res h3{margin:0 0 4px}
+.score{font-size:14px;color:var(--sub)}
+.why li{font-size:15px}
+</style>
+<script type="application/json" id="ff-data">{"useLabels": {"bake": "it handles baking", "dinner": "it suits weeknight dinners", "crisp": "it makes crispy food", "coffee": "it makes espresso drinks", "stew": "it suits stews and braises"}, "sizeLabels": {"1": "1 to 2 people", "2": "3 to 4 people", "3": "5 or more"}, "spaceLabels": {"small": "suits a small space", "ok": "fine on a counter"}, "levelLabels": {"start": "easy to start with", "more": "room to grow"}, "items": [{"name": "KitchenAid Artisan 5-qt tilt-head (KSM150PS)", "asin": "B00005UP2P", "uses": ["bake"], "sizes": [2, 3], "space": ["ok"], "level": ["more", "start"], "note": "A 5-quart tilt-head stand mixer. It is a countertop machine, so it needs a spot on the counter."}, {"name": "Instant Pot Duo 6-qt 7-in-1", "asin": "B00FLYWNYQ", "uses": ["dinner", "stew"], "sizes": [1, 2], "space": ["ok"], "level": ["start"], "note": "A 6-quart multicooker: pressure cooker, slow cooker and rice cooker in one pot."}, {"name": "Ninja AF101 4-qt air fryer", "asin": "B07FDJMC9Q", "uses": ["crisp", "dinner"], "sizes": [1, 2], "space": ["small", "ok"], "level": ["start"], "note": "A compact 4-quart basket air fryer. Check the model number AF101 on the Amazon page."}, {"name": "Breville Bambino Plus", "asin": "B07JVD78TT", "uses": ["coffee"], "sizes": [1, 2, 3], "space": ["small", "ok"], "level": ["more", "start"], "note": "A small espresso machine with automatic milk frothing. The plain Bambino is a different model."}, {"name": "Lodge Essential 6-qt enameled Dutch oven", "asin": "B000N501BK", "uses": ["stew", "dinner"], "sizes": [2, 3], "space": ["small", "ok"], "level": ["start", "more"], "note": "A 6-quart enameled Dutch oven for bread, stews and braises. It needs no counter space."}]}</script>
+<header class="top"><div class="wrap">
+  <a class="brand" href="./"><i><svg width="13" height="13" viewBox="0 0 14 14" aria-hidden="true"><path d="M2 10l3-4 2.5 2.5L12 3" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></i>Countertop Ledger</a>
+  <nav class="links" aria-label="Main">
+    <a href="guides/when-to-buy-kitchen-appliances.html">When to buy</a>
+    <a href="guides/gifts-for-coffee-lovers.html" class="hide">Gift ideas</a>
+    <a href="about.html">About</a>
+  </nav>
+</div></header>
+<main class="article"><div class="wrap narrow">
+  <div class="crumbs"><a href="./">Home</a> / Kitchen Fit Finder</div>
+  <h1>Kitchen Fit Finder</h1>
+  <p class="dek">Four questions, up to three appliances that match your household, your space and what you cook. The scoring is below the results, so you can disagree with it.</p>
+  <p class="meta">Version 0 &middot; November 2026</p>
+  <p class="disclose"><b>#ad</b> We may earn a commission when you buy through links on this page, at no extra cost to you. Every product link goes straight to its page on Amazon.com.</p>
+  <div class="prose ff">
+   <form id="ff" onsubmit="return false">
+    <fieldset><legend>1. How many people do you cook for?</legend>
+     <label><input type="radio" name="size" value="1" checked>1 to 2</label>
+     <label><input type="radio" name="size" value="2">3 to 4</label>
+     <label><input type="radio" name="size" value="3">5 or more</label></fieldset>
+    <fieldset><legend>2. How much counter and cabinet space can you give it?</legend>
+     <label><input type="radio" name="space" value="small" checked>Very little: it has to be easy to put away</label>
+     <label><input type="radio" name="space" value="ok">Enough: it can live on the counter</label></fieldset>
+    <fieldset><legend>3. What do you most want to make? (pick any)</legend>
+     <label><input type="checkbox" name="use" value="bake">Cookies, bread and cakes</label>
+     <label><input type="checkbox" name="use" value="dinner">Weeknight dinners</label>
+     <label><input type="checkbox" name="use" value="crisp">Crispy food with little oil</label>
+     <label><input type="checkbox" name="use" value="coffee">Espresso and milk drinks</label>
+     <label><input type="checkbox" name="use" value="stew">Stews, braises and bread in the oven</label></fieldset>
+    <fieldset><legend>4. Which describes you better?</legend>
+     <label><input type="radio" name="level" value="start" checked>I am starting out and want the easiest option</label>
+     <label><input type="radio" name="level" value="more">I will use it often and want more features</label></fieldset>
+    <button class="btn" id="go" type="button">Show my match</button>
+   </form>
+   <div id="out" aria-live="polite"></div>
+   <h2>How the score works</h2>
+   <p>Each appliance gets points from your answers: +3 for each thing you want to make that it does, +2 if its size suits your household, +2 if it suits your space, +1 if it suits your level. We list the top match first. This is our own rule of thumb, not a lab result. We do not test products and show no prices, because prices change daily.</p>
+   <p>Capacity and model facts are the ones in our <a href="guides/black-friday-kitchen-deals-worth-waiting-for.html">Black Friday kitchen guide</a>; the size, space and level fit is our own call. Version 0 covers five appliances; more are coming.</p>
+  </div>
+</div></main>
+<footer><div class="wrap">
+  <nav aria-label="Footer"><a href="guides/when-to-buy-kitchen-appliances.html">When to buy</a><a href="guides/gifts-for-coffee-lovers.html">Gift ideas</a><a href="about.html">About &amp; disclosure</a><a href="privacy.html">Privacy</a></nav>
+  <span>As an Amazon Associate, Countertop Ledger earns from qualifying purchases.</span>
+  <span>&copy; 2026 Countertop Ledger</span>
+</div></footer>
+<script src="assets/tag.js"></script>
+<script>
+(function(){
+ var D=JSON.parse(document.getElementById('ff-data').textContent);D.max=function(n){return 3*n+5};
+ function esc(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML}
+ document.getElementById('go').addEventListener('click',function(){
+  var f=document.getElementById('ff'),size=+f.size.value,space=f.space.value,level=f.level.value;
+  var uses=[].slice.call(f.querySelectorAll('input[name=use]:checked')).map(function(i){return i.value});
+  var rows=D.items.map(function(p){
+   var why=[],s=0;
+   uses.forEach(function(u){if(p.uses.indexOf(u)>-1){s+=3;why.push('+3 '+D.useLabels[u])}});
+   if(p.sizes.indexOf(size)>-1){s+=2;why.push('+2 size suits '+D.sizeLabels[size])}
+   if(p.space.indexOf(space)>-1){s+=2;why.push('+2 '+D.spaceLabels[space])}
+   if(p.level.indexOf(level)>-1){s+=1;why.push('+1 '+D.levelLabels[level])}
+   return {p:p,s:s,why:why}});
+  rows.sort(function(a,b){return b.s-a.s});
+  var top=uses.length?rows.filter(function(r){return r.why.length&&r.why[0].indexOf('+3')===0}).slice(0,3):[],h='';
+  if(!top.length)h='<p>No match yet. Pick at least one thing you want to make (question 3).</p>';
+  top.forEach(function(r,i){
+   var p=r.p;
+   h+='<div class="res"><h3>'+(i+1)+'. '+esc(p.name)+'</h3><div class="score">Score '+r.s+' of '+D.max(uses.length)+'</div><ul class="why">'+r.why.map(function(w){return '<li>'+esc(w)+'</li>'}).join('')+'</ul><p>'+esc(p.note)+'</p><p><a class="btn" data-ctl-click="amazon/fit-finder/'+p.asin+'" href="https://www.amazon.com/dp/'+p.asin+'?tag=countertopled-20" rel="sponsored noopener" target="_blank">'+esc(p.name)+' on Amazon</a></p></div>'});
+  document.getElementById('out').innerHTML=h;
+ });
+})();
+</script>
+</body>
+</html>
